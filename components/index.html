@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/wamweaa" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Patrick Kinyanjui. I'm a web developer.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a software developer experienced in building websites for small and medium-sized businesses. Whether you're trying to win work, list your services, or create a new online store, I can help. I specialize in HTML, CSS3, React, and Flask.</p>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="container-skillbar">
+                <div class="skillbar">
+                    <div class="skillbar-title"><span>HTML</span></div>
+                    <div class="skillbar-bar" style="width: 90%; background: #6adcfa;"></div>
+                    <div class="skill-bar-percent">90%</div>
+                </div>
+                <div class="skillbar">
+                    <div class="skillbar-title"><span>CSS</span></div>
+                    <div class="skillbar-bar" style="width: 80%; background: #6adcfa;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                <div class="skillbar">
+                    <div class="skillbar-title"><span>JavaScript</span></div>
+                    <div class="skillbar-bar" style="width: 75%; background: #6adcfa;"></div>
+                    <div class="skill-bar-percent">75%</div>
+                </div>
+                <div class="skillbar">
+                    <div class="skillbar-title"><span>React</span></div>
+                    <div class="skillbar-bar" style="width: 85%; background: #6adcfa;"></div>
+                    <div class="skill-bar-percent">85%</div>
+                </div>
+                <div class="skillbar">
+                    <div class="skillbar-title"><span>Flask</span></div>
+                    <div class="skillbar-bar" style="width: 70%; background: #6adcfa;"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="https://www.upwork.com/att/download/portfolio/persons/uid/1791080721813217280/profile/projects/files/85f53ee9-d01e-43f6-a15b-736ffd039765" alt="" class="project-img">
+            <img src="https://www.upwork.com/att/download/portfolio/persons/uid/1791080721813217280/profile/projects/files/a3952dd2-3bd7-4410-ad42-dd8e12dcdbaa" alt="" class="project-img">
+            <div class="project-info">
+                <h3>Grocery Store</h3>
+                <p>Project description. Developed an online grocery store platform to enable customers to conveniently shop for groceries from home. The project aimed to provide a seamless shopping experience with features such as product search, category browsing, and a secure checkout process. I implemented a robust backend using Flask and created a dynamic and responsive frontend using React. The solution enhanced customer convenience, increased sales, and improved inventory management.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="https://www.upwork.com/att/download/portfolio/persons/uid/1791080721813217280/profile/projects/files/9a74f101-4ce8-4956-a57c-f105f4e5820b" alt="" class="project-img">
+            <img src="https://www.upwork.com/att/download/portfolio/persons/uid/1791080721813217280/profile/projects/files/5346dcc6-36dd-46d4-9c56-52d65825fed7" alt="" class="project-img">
+            <div class="project-info">
+                <h3>Online Learning Platform</h3>
+                <p>An online learning platform is a digital environment that facilitates the delivery of educational content and enables users to access and engage in courses remotely. It allows educators to create and manage courses while providing learners with the tools and resources needed to study and acquire new knowledge. These platforms often cater to a wide range of subjects and skill levels, offering both free and paid courses.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
