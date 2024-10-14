@@ -6,7 +6,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     event.preventDefault();
 
     // Send email using EmailJS
-    emailjs.sendForm('your_service_id', 'your_template_id', this)
+    emailjs.sendForm('service_u9vsmfp', 'template_kwvy3wp', this)
         .then(function(response) {
             console.log('Success:', response);
             alert('Form submitted successfully');
